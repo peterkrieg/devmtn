@@ -1,0 +1,40 @@
+*{
+	box-sizing: border-box;
+}
+
+div.main-wrapper{
+	width: 80%;
+	min-width: 800px;
+	margin: auto;
+}
+
+header{
+	width: 100%;
+	color: white;
+	padding: 26px;
+	height: 120px;
+	background: lightblue;
+	font-size: 25px;
+}
+
+header h1{
+	margin: 0;
+	display: inline-block;
+	float: left;
+	position: relative;
+	top: 35%;
+}
+
+header a{
+	float: right;
+	position: relative;
+	top: 35%;
+	color: white;
+	margin-left: 40px;
+	text-decoration: none;
+}
+header a:hover{
+	color: tomato;
+	transition: 1s ease;
+}
+

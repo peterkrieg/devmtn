@@ -40,3 +40,9 @@ div.sq-4{
 	left: 0;
 	top: 0;
 }
+div.rectangle{
+	width: 100%;
+	max-width: 300px;
+	height: 200px;
+	background: darkseagreen;
+}

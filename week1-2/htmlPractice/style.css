@@ -1,0 +1,10 @@
+body{
+	background: tomato;
+}
+
+div.square{
+	width: 100px;
+	height: 100px;
+	background: royalblue;
+	margin: 20px;
+}
