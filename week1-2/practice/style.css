@@ -1,0 +1,42 @@
+*{
+	box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+	width: 100%;
+}
+div.container{
+	width: 500px;
+	background: lightblue;
+	min-height: 400px;
+	margin-top: 100px;
+	/*position: relative;*/
+}
+div.sq{
+	/*display: inline-block;*/
+	margin-bottom: 20px;
+	height: 100px;
+	width: 100px;
+	background: tomato;
+	position: relative;
+	top: 40px;
+	/*float: left;*/
+}
+div.sq-1{
+	background: rebeccapurple;
+}
+div.sq-2{
+	left: 10%;
+	background: seagreen;
+}
+div.sq-3{
+	position: fixed;
+	background: skyblue;
+	top: 0;
+	left: 150px;
+}
+div.sq-4{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
