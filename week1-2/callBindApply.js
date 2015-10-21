@@ -71,3 +71,29 @@ function consoleHello(name){
 
 sayHello('peter', alertHello);
 sayHello('peter', consoleHello);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
