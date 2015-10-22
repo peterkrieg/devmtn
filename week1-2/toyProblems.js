@@ -31,3 +31,46 @@ for(var i=0; i<101;){
 	console.log((++i%3?'':'Fizz')+(i%5?'':'Buzz')||i);
 }
 
+
+// Return fibonacci sequence
+
+function fib(num){
+	if(num===1){
+		return [1];
+	}
+	var arr = [1,1];
+	var prevValue = 1;
+	for(var i=2; i<num; i++){
+		arr[i]= prevValue+arr[i-2];
+		prevValue = arr[i];
+	}
+	return arr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
