@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-us" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body ng-controller="myController">
+	<p>This is plain text</p>
+
+
+	<div>{{name}}</div>
+
+	<input type="text" ng-model="foo">
+	<p>{{foo}}</p>
+
+	<input type="text" ng-model="person.name">
+	<input type="text" ng-model="person.cereal">
+	<input type="text" ng-model="person.media">
+	<input type="text" ng-model="person.random">
+
+	<ul>
+		<li>{{person.name}}</li>
+		<li>{{person.cereal}}</li>
+		<li>{{person.media}}</li>
+		<li>{{person.random}}</li>
+	</ul>
+
+
+	Filter: <input class="filterInput"ng-model="carFilter">
+	<h2>Repeat</h2>
+	<!-- <div ng-repeat="car in cars | filter: carFilter"> -->
+	<div ng-repeat="car in cars | filter: {name: carFilter}">
+		Car Name: {{car.name}}      -----------Car year:  {{car.year}}
+	</div>
+
+	<h2 ng-init="isAwesome=false">Show/Hide</h2>
+
+	<p ng-show="isAwesome">Yay, you are awesome!</p>
+	<!-- <p ng-show="!isAwesome">sorry, you're not awesome :(</p> -->
+	<p ng-hide="isAwesome">sorry, you're not awesome :(</p>
+
+	<p ng-if="isAwesome">if you are awesome you see this</p>
+
+	<button ng-click="clicked()">Click Me!</button>
+
+
+
+	<script src="/codeLib/jquery.min.js"></script>
+	<script src="/codeLib/angular.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

@@ -1,1 +1,4 @@
 notes/
+.sass-cache
+*.css
+*.css.map
