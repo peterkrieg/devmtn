@@ -1,19 +1,21 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 
+var usersCtrl = require('./controllers/usersCtrl');
+
+
 var app = express();
 
 app.use(bodyParser.json());
 
-app.get('/users', function(req, res, next){
-	res.status(200).json({name: 'peter krieg', age: 22});
-});
+app.get('/users', usersCtrl.index);
+app.get('/users/:id', usersCtrl.show);
 
-app.post('/users', function(req, res, next) {
-	var sentUser = req.body;
-	sentUser.status = 'new';
-	res.status(200).json(sentUser);
-});
+
+
+
+
+app.post('/users', usersCtrl.log, usersCtrl.build);
 
 
 
