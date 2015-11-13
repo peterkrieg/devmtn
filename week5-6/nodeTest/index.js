@@ -10,7 +10,10 @@ app.get('/users', function(req, res, next){
 });
 
 app.post('/users', function(req, res, next){
-	console.log(req.body);
+	res.status(200).json(req.body)
+
+
+	// console.log(req.body);
 })
 
 
