@@ -77,7 +77,10 @@ var CarSchema = mongoose.Schema({
 var DriverSchema = mongoose.Schema({
 	name: {type: String},
 	age: {type: Number},
-	License: {type: Number}
+	License: {type: Number},
+	cars: [
+		{type: mongoose.Schema.Types.ObjectId, ref: 'Car'}
+	]
 });
 
 var CarSchema = mongoose.Schema({
@@ -86,6 +89,8 @@ var CarSchema = mongoose.Schema({
 	model: {type: String},
 	drivers: [DriverSchema]
 });
+
+
 
 mongoose.model('Car', CarSchema);
 mongoose.model('Driver', DriverSchema);
